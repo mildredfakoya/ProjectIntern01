@@ -15,7 +15,7 @@
 	<div class="col-3">
 	<div class="sidenav" id="mySidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#">Home</a>
+		<a href="home.php">Home</a>
 		<a href="#">View Appointment</a>
 	</div>
 	<div id="main">
@@ -56,8 +56,8 @@
 </section>
 
 
-<script src="appointmentvalidate.js"></script>
-<script src="appointmentstorscript.js"></script>
+<script src="/scripts/appointment_validate.js"></script>
+<script src="/scripts/appointment_storage.js"></script>
 <script>
 	function openNav() {
     document.getElementById("mySidenav").style.width = "200px";

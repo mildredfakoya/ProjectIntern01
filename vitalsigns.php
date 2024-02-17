@@ -16,7 +16,7 @@
                 <div class="col-3">
                         <div class="sidenav" id="mySidenav">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                <a href="#">Home</a>
+                                <a href="">Home</a>
                                 <a href="#">Logout</a>
                         </div>
                         <div id="main">
@@ -71,7 +71,7 @@
             <div class="col-5" id="display-container"></div>
             </section>
 
-<script src="vitalsigns.js"></script>
+<script src="/scripts/vitalsigns_display.js"></script>
 <script>
 	function openNav() {
     document.getElementById("mySidenav").style.width = "200px";

@@ -30,7 +30,7 @@ function saveAppointments() {
 }
 
 function displayAppointments() {
-    var container = document.getElementById("a_appointments-storage");
+    var container = document.getElementById("appv_display-containe");
     container.innerHTML = "";
 
     // Retrieve saved appointments from storage

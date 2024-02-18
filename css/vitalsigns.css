@@ -1,199 +1,4 @@
-*{
-    box-sizing: border-box;
-  }  
-  
-  .row::after{
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  [class*="col-"]{
-    float: left;
-    padding: 10px;
-  }  
-  
-  [class*="col-"]{
-    width: 100%;
-  }
-  /* Medium devices (landscape tablets, 768px and up)*/
-@media only screen and (min-width: 768px){
-
-
-    .col-1 {
-      width: 8.33%;
-    }  
-    
-    .col-2 {
-      width: 16.66%;
-    }
-    
-    .col-3 {
-      width: 25%;
-    }
-    .col-4 {
-      width: 33.33%;
-    }
-    
-    .col-5 {
-      width: 41.66%;
-    }
-    
-    .col-6 {
-      width: 50%;
-    }
-    
-    .col-7 {
-      width: 58.33%;
-    }
-    
-    .col-8 {
-      width: 66.66%;
-    }
-    
-    .col-9 {
-      width: 75%;
-    }
-    
-    .col-10 {
-      width: 83.33%;
-    }
-    
-    .col-11 {
-      width: 91.66%;
-    }
-    
-    .col-12 {
-      width: 100%;
-    }
-    }
-    
-    /* Small devices (portrait tablets and large phones, 600px and up)*/
-    @media only screen and (min-width: 600px){
-    
-    .col-s-1 {
-      width: 8.33%;
-    }
-    
-    .col-s-2 {
-      width: 16.66%;
-    }
-    
-    .col-s-3 {
-      width: 25%;
-    }
-    
-    .col-s-4 {
-      width: 33.33%;
-    }
-    
-    .col-s-5 {
-      width: 41.66%;
-    }
-    
-    .col-s-6 {
-      width: 50%;
-    }
-    
-    .col-s-7 {
-      width: 58.33%;
-    }
-    
-    .col-s-8 {
-      width: 66.66%;
-    }
-    
-    .col-s-9 {
-      width: 75%;
-    }
-    .col-s-10 {
-      width: 83.33%;
-    }
-    
-    .col-s-11 {
-      width: 91.66%;
-    }
-    
-    .col-s-12 {
-      width: 100%;
-    }
-    
-    }
-    
-    
-    /* For small mobile phone devices*/
-    @media only screen and (max-width:600px){
-
-    .col-s-1{
-      width: 8.33%;
-    }
-    
-    .col-s-2{
-      width: 16.66%;
-    }
-    
-    .col-s-3{
-      width: 25%;
-    }
-    
-    .col-s-4{
-      width: 33.32%;
-    }
-    
-    .col-s-5{
-      width: 41.65%;
-    }
-    
-    .col-s-6{
-      width: 50%;
-    }
-    
-    .col-s-7{
-      width: 58.31%;
-    }
-    
-    .col-s-8{
-      width: 66.64%;
-    }
-    
-    .col-s-9{
-      width: 75%;
-    }
-    
-    .col-s-10{
-      width: 83.3%;
-    }
-    
-    .col-s-11{
-      width: 91.63%;
-    }
-    
-    .col-s-12{
-      width: 100%;
-    }
-}
-    
-.vitals_body{
-  /* background-image: url(plain2.jpg);
-  background-size: cover; */
-    background-color: rgb(240, 229, 229);
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 25px;}
-  .sidenav a {font-size: 18px;}
-}
-
-#span{
-  position: relative;
-  top: -130px;
-  font-size: 30px;
-  cursor:pointer; 
-  background-color: #818181;
-  color: rgb(68, 185, 185);
-  margin-left: 60px;
-}
-
+/*Styling Side Navigation Bar*/
 .sidenav {
   height: 100%;
   width: 0;
@@ -208,6 +13,7 @@
   margin-inline: auto;
 }
 
+/*Styling Side Nav Link*/
 .sidenav a {
   padding: 8px 8px 8px 32px;
   margin: 10px;
@@ -218,54 +24,24 @@
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
 .sidenav .closebtn {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-
-}
-.vitals {
-  background-color: #f2f2f2f2;
-  padding: 20px;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  width: auto;
 }
 
-.vitals h1 {
-  color: #333;
-  font-size: 24px;
-  margin-top: 0;
-  margin-bottom: 10px;
+/*Styling of Toggle button*/
+#span{
+  position: relative;
+  top: -130px;
+  font-size: 30px;
+  cursor:pointer; 
+  background-color: #818181;
+  color: rgb(68, 185, 185);
+  margin-left: 60px;
 }
 
-.vitals nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.vitals a.nav-link {
-  /* color: #555; */
-  text-decoration: none;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  padding: 5px 10px;
-  border-radius: 3px;
-  margin-right: 5px;
-}
-
-.vitals a.nav-link:hover {
-  background-color: #ddd;
-}
-
-#v_form {
+#vitals_form {
     position: relative;
     top: -25px;
     left: 0px;
@@ -314,8 +90,7 @@
     }
 
     .v_button:hover{
-        background-color: blue;
-        color: #fff;
+      background-color: rgb(180, 204, 204);
     }
 
     .v_container{

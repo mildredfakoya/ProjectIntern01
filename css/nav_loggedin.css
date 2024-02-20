@@ -22,8 +22,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 26px;
-    margin: 0 100px;
+    padding: 0 24px;
 }
 
 .nav-menu{
@@ -73,14 +72,11 @@ a{
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-    .navbar{
-        margin: 0 30px;
-    }
 
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 85px;
+        top: 70px;
         gap: 0;
         flex-direction: column;
         background-color: wheat;

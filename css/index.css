@@ -1,15 +1,5 @@
 @media only screen and (min-width: 1025px) {
     /*screens larger than 1024px (desktop) */
-    /*
-    header, nav, section, article, footer {
-      margin: 10px;
-      padding: 10px;
-    }
-    */
-
-*{
-    color: rgb(31, 31, 31) ;
-}
 
 .iHero{
     height: 80vh;
@@ -22,7 +12,7 @@
     flex-direction: column;
 }
 
-.iBlur{
+.iBT{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +32,7 @@
 }
 
 .iArt{
-    background-color: azure;
+    background-color: rgb(255, 238, 205);
     border-radius: 4px;
     padding: 15px;
     justify-content: center;
@@ -55,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+    background-color: wheat;
     padding: 50px 120px;
     gap: 30px;
 }
@@ -114,13 +104,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: beige;
+        background-color: wheat;
         padding: 50px 100px;
         gap: 30px;
     }
 
     .iArt{
-        background-color: azure;
+        background-color: rgb(255, 238, 205);
         border-radius: 4px;
         padding: 15px;
         justify-content: center;
@@ -183,7 +173,7 @@
     }
     
     .iArt-bg{
-        background-color: beige;
+        background-color: wheat;
         gap: 30px;
         max-width: 600;
         width: 100%;
@@ -194,7 +184,7 @@
     }
 
     .iArt{
-        background-color: azure;
+        background-color: rgb(255, 238, 205);
         border-radius: 4px;
         padding: 15px;
         justify-content: center;
@@ -222,3 +212,4 @@
     }
    
   }
+

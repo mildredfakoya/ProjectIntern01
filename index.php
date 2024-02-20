@@ -4,7 +4,7 @@ require_once "nav.php";
  
  <body>
     <section class="iHero">
-        <div class="iBlur">
+        <div class="iBT">
             <div class="iBg-text">VitalGuard Clinic</div>
             <div class="iBg-text2">Securing Your Health, One Vital at a Time</div>
         </div>
@@ -16,7 +16,7 @@ require_once "nav.php";
         </article>
         <article class="iArt">
         <h3>What You Get</h3><br>
-            <p>From preventative screenings to advanced diagnostic testing, we offer thorough assessments to ensure early detection and proactive management of health issues. Additionally, our team provides personalized treatment plans, education, and ongoing support to empower you on your journey to optimal health and wellness. With us, you'll receive the care and attention you deserve to live your best life.</p>
+            <p>From preventative screenings to advanced diagnostic testing, we offer thorough assessments to ensure early detection and proactive management of health issues. Additionally, our team provides personalized treatment plans, and ongoing support to empower you on your journey to optimal health and wellness. With us, you'll receive the care and attention you deserve to live your life.</p>
         </article>
     </section>
     <div class="iContact">

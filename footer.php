@@ -7,7 +7,7 @@
             <p  style="color: wheat; font-size: 16px; font-family: Arial, sans-serif; line-height: 1.5;" >Contact Us</p>
            
         </div>
-        <p class= "pFooter">&copy; 2024 My Website. All rights reserved.</p>
+        <p class= "pFooter">&copy; 2024 VitalGuard Clinic. All rights reserved.</p>
     </section>
     
 </body>

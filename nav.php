@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/appointment.css">
     <link rel="stylesheet" href="css/vitalsigns.css">
+    <link rel="stylesheet" href="css/appointment_vitals.css">
     <link rel="stylesheet" href="css/.css">
     <link rel="stylesheet" href="css/.css">
     <link rel="stylesheet" href="css/.css">

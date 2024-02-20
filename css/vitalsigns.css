@@ -1,0 +1,114 @@
+/*Styling Side Navigation Bar*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 70px;
+    left: 0;
+    background-color: rgb(4, 4, 124);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0;
+    margin-inline: auto;
+  }
+  
+  /*Styling Side Nav Link*/
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav .closebtn {
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /*Styling of Toggle button*/
+  #span{
+    position: relative;
+    top: -130px;
+    font-size: 30px;
+    cursor:pointer; 
+    background-color: #818181;
+    color: rgb(68, 185, 185);
+    margin-left: 60px;
+  }
+  
+  #vitals_form {
+      position: relative;
+      top: -25px;
+      left: 0px;
+      border-radius: 5px;
+      width: auto;
+      margin: 80px;
+      padding: 20px 20px;
+      font-weight: bold;
+      }
+  
+      /* Styling form-control Class */
+      .form-control {
+       text-align: left;
+      }
+  
+      /* Styling form-control Label */ 
+      .form-control label {
+          color: rgb(10, 78, 83);
+          display: block;
+          text-align: left;
+      }
+  
+      /* Styling form-control input, 
+      select, textarea */
+      .form-control input {
+        background-color: rgb(180, 204, 204);
+          border: 1px solid #777;
+          border-radius: 5px;
+          font-family: inherit;
+          font-size: large;
+          padding: 10px;
+          display: block;
+          height: 38px;
+          width: auto;
+      }
+  
+      .v_button {
+          border: 1px solid #777;
+          border-radius: 5px;
+          font-family: inherit;
+          font-size: large;
+          display: block;
+          background-color: #4CAF50;
+          width: 60px;
+          height: 30px;
+      }
+  
+      .v_button:hover{
+        background-color: rgb(180, 204, 204);
+      }
+  
+      .v_container{
+        border: solid 1px;
+  
+        width: auto;
+        background-color: #ffffff;
+      }
+  
+      #display-container{
+          position: relative;
+          top: 80px;
+          left: 0;
+          color: rgb(16, 91, 97);
+          width: auto;
+          font-size: larger;
+          font-weight: bold;
+          border: #777 solid;
+          border-radius: 5px;
+          margin-left: 100px;
+      }

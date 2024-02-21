@@ -73,6 +73,7 @@
   font-family: 'Times New Roman', Times, serif;
   background-color: rgb(240, 229, 229);
   font-weight: bold;
+
   }
   
   @media screen and (max-height: 450px) {
@@ -101,7 +102,9 @@
 }
 
 .appv_appoint {
+
   background-color: #c7b7b7;
+
   padding: 20px;
   border: 1px solid #bdd6dd;
   border-radius: 5px;
@@ -110,7 +113,9 @@
 }
 
 .appv_appoint h1 {
+
   color: #350404;
+
   font-size: 24px;
   margin-top: 0;
   margin-bottom: 10px;
@@ -143,6 +148,7 @@
   font-size: small;
   color: #36a9b1;
   margin: 5px;
+
 }
 
 

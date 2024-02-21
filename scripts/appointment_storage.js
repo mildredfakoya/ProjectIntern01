@@ -1,4 +1,5 @@
 function saveAppointments() {
+
     // Get form inputs
     let fullName = document.getElementById('name1').value;
     let hospitalRecordID = document.getElementById('hospitalrec').value;
@@ -12,10 +13,12 @@ function saveAppointments() {
         fullName: fullName,
         hospitalRecordID: hospitalRecordID,
         phoneNumber: phoneNumber,
+
         appointment_d: appointment_d,
         appointment_time: appointment_time,
         reason: reason
     };
+
 
     // Store appointment data
     sessionStorage.setItem('lastAppointment', JSON.stringify(appointment));
@@ -32,3 +35,4 @@ function saveAppointments() {
         <strong>Reason for Appointment:</strong> ${reason}<br><br>
     `;
 }
+

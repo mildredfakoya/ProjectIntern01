@@ -5,7 +5,9 @@
     z-index: 1;
     top: 0;
     left: 0;
+
     background-color: rgb(2, 2, 43);
+
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 0;
@@ -27,9 +29,11 @@
     margin-left: 50px;
 }
 
+
 #app_span{
   position: relative;
   top: 60px;
+
   font-size: 30px;
   cursor:pointer; 
   background-color: #818181;
@@ -38,10 +42,12 @@
   }
 
   #appointments {
+
     max-width: 400px;
     margin: 0;
     margin-inline: auto;
     padding: 20px;
+
   }
   
   #appointments label {
@@ -90,7 +96,9 @@
   
   #app_span{
     position: relative;
+
     top: -130px;
+
     font-size: 30px;
     cursor:pointer; 
     background-color: #818181;
@@ -101,10 +109,13 @@
   span{
     background-color: #ffffff;
     color: red;
+    font-weight: bold;
+
   }
 
   #display-container{
       color: rgb(27, 107, 112);
+
       max-width: 400px;
       margin: auto 0;
       margin-top: 30px;
@@ -114,5 +125,6 @@
       border: #271c1c solid;
       border-radius: 10px;
       box-shadow: #271c1c 5px 3px 2px 1px;
+
   }
 

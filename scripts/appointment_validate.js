@@ -1,4 +1,5 @@
 function validateAppointment() {
+
     try {
         let name1 = document.forms.appointments.name1.value;
         let hospitalrec = document.forms.appointments.hospitalrec.value;
@@ -81,4 +82,4 @@ function validateAppointment() {
     }
   }
   
-  
+ 

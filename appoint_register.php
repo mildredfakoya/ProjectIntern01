@@ -3,6 +3,7 @@
  ?>
 
 <body id="appv_body">
+
     <div class="appv_appoint">
        <h1>Appointment Registration Form</h1>
            <nav>
@@ -15,6 +16,7 @@
         <div class="col-3">
         <div class="sidenav" id="mySidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
             <a href="index.php">Home</a>
             <a href="javascript:void(0)" onclick="showAppointments()">View Appointments</a>
         </div>
@@ -24,6 +26,7 @@
         </div>
         
     <form class="col-5" method="" action="" id="appointments" name="appointments"
+
        onsubmit="return validateAppointment();" autocomplete="off" >
        <label for="name1">Fullname:</label>
        <input type="text" id="name1" name="name1" placeholder="enter name" autocomplete="on">
@@ -50,6 +53,7 @@
        <span id="reasonErr"></span>
     
            <button class="appointment_button" id="submit" onclick="saveAppointments()">Save</button>
+
            <p class="appv_p">Please click on the toggle button on the left to view Appointments</p>
     </form>
 
@@ -83,4 +87,4 @@
      <?php
   require_once "footer.php";
  ?> 
- 
+

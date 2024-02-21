@@ -1,3 +1,4 @@
+
 function collectAndDisplayValues() {
     let dateTime = document.getElementById("datetime").value;
     let bloodPressure = document.getElementById("bp").value;

@@ -1,0 +1,33 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Ffooter{
+    background-color: #000f3a;
+    ;
+}
+
+.fContainer {
+	max-width: 1200;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 2rem;
+    padding: 100px 120px;
+    color: bisque;
+}
+
+.pFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    padding-bottom: 10px;
+}
+
+.fContainer p{
+    color: wheat;
+}

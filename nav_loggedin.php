@@ -22,18 +22,20 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="index.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="appoint_register.php" class="nav-link">Appointment</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link nlogin">Login</a>
+                    <a href="vitalsigns.php" class="nav-link">Vital signs</a>
                 </li>
-            
+                <li class="nav-item">
+                    <a href="nav.php" class="nav-link">Sign out</a>
+                </li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>

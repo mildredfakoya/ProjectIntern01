@@ -43,7 +43,7 @@
 
 #vitals_form {
     position: relative;
-    top: -25px;
+    top: -70px;
     left: 0px;
     border-radius: 5px;
     width: auto;
@@ -93,22 +93,13 @@
       background-color: rgb(180, 204, 204);
     }
 
-    .v_container{
-      border: solid 1px;
-  
-      width: auto;
-      background-color: #ffffff;
-    }
-
     #display-container{
         position: relative;
-        top: 80px;
-        left: 0;
+        top: 40px;
+        left: 200px;
         color: rgb(16, 91, 97);
         width: auto;
-        font-size: larger;
-        font-weight: bold;
+        font-size: large;
         border: #777 solid;
-        border-radius: 5px;
-        margin-left: 100px;
+        border-radius: 10px;
     }

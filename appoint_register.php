@@ -1,8 +1,8 @@
 <?php
   require_once "nav.php";
  ?>
- 
- <body class="appv_body">
+
+<body id="appv_body">
     <div class="appv_appoint">
        <h1>Appointment Registration Form</h1>
            <nav>
@@ -10,20 +10,20 @@
                <a class="nav-link" href="#">Services</a>
            </nav>
     </div>
-    
+    <p class="appv_p">Please click the toggle button below to view Appointments</p>
     <section class="row">
         <div class="col-3">
         <div class="sidenav" id="mySidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="home.php">Home</a>
-            <a href="#">View Appointment</a>
+            <a href="index.php">Home</a>
+            <a href="javascript:void(0)" onclick="showAppointments()">View Appointments</a>
         </div>
-        <div id="main">
-            <span id="span" onclick="openNav()">&#9776;</span>
+        <div>
+            <span id="app_span" onclick="openNav()">&#9776;</span>
         </div>
         </div>
         
-     <form class="col-5" method="" action="" id="appointments" name="appointments"
+    <form class="col-5" method="" action="" id="appointments" name="appointments"
        onsubmit="return validateAppointment();" autocomplete="off" >
        <label for="name1">Fullname:</label>
        <input type="text" id="name1" name="name1" placeholder="enter name" autocomplete="on">
@@ -49,29 +49,36 @@
        <textarea id="reason" name="reason"></textarea>
        <span id="reasonErr"></span>
     
-           <button class="appointment_button" id="submit" onclick="saveAppointments()">Save</button>
-           </form>
-    
-       <div id="display-container"></div>
+           <button class="appointment_button" id="submit" onclick="saveAppointments()">Submit</button>
+          
+    </form>
+
+           <div class="col-4" id="display-container"></div>
+
     </section>
-    
-    
-    <script src="/scripts/appointment_validate.js"></script>
-    <script src="/scripts/appointment_storage.js"></script>
+
+    <script src="scripts/appointment_validate.js"></script>
+    <script src="scripts/appointment_storage.js"></script>
+
     <script>
         function openNav() {
         document.getElementById("mySidenav").style.width = "200px";
         document.getElementById("mySidenav").style.height = "200px";
-        document.getElementById("main").style.marginLeft = "0px";
     }
     
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft= "0";
     }
+
+    function showAppointments() {
+        // Function to display the appointments container
+        var displayContainer = document.getElementById('display-container');
+        displayContainer.style.display = displayContainer.style.display === 'none' ? 'block' : 'none';
+    }
     </script>
     
-     </body>
- <?php
+</body>
+<?php
   require_once "footer.php";
  ?>

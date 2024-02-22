@@ -1,4 +1,3 @@
-
 function collectAndDisplayValues() {
     let dateTime = document.getElementById("datetime").value;
     let bloodPressure = document.getElementById("bp").value;
@@ -42,13 +41,13 @@ function displayVitalSigns(){
     let bodyMassIndex = localStorage.getItem("bodyMassIndex");
     let temperature = localStorage.getItem("temperature");
 
-    container.innerHTML += "Date/Time: " + dateTime + "<br></br>";
-    container.innerHTML += "Blood Pressure: " + bloodPressure + " mmHg<br></br>";
-    container.innerHTML += "Pulse: " + pulse + " bpm<br></br>";
-    container.innerHTML += "Respiration: " + respiration + " cpm<br></br>";
-    container.innerHTML += "Weight: " + weight + " kg</br></br>";
-    container.innerHTML += "Height: " + height + " meters<br></br>";
-    container.innerHTML += "Body Mass Index: " + bodyMassIndex + " kg/m<sup>2</sup><br></br>";
+    container.innerHTML += "Date/Time: " + dateTime + "<br><br>";
+    container.innerHTML += "Blood Pressure: " + bloodPressure + " mmHg<br><br>";
+    container.innerHTML += "Pulse: " + pulse + " bpm<br><br>";
+    container.innerHTML += "Respiration: " + respiration + " breaths/minute<br><br>";
+    container.innerHTML += "Weight: " + weight + " kg</br><br>";
+    container.innerHTML += "Height: " + height + " meters<br><br>";
+    container.innerHTML += "Body Mass Index: " + bodyMassIndex + " kg/m<sup>2</sup><br><br>";
     container.innerHTML += "Temperature: " + temperature + " &deg;C";
     container.innerHTML += "<hr>";
 

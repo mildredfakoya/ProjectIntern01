@@ -1,51 +1,66 @@
-function validateAndSave() {
-    var firstname = document.getElementById('firstname').value;
-    var lastname = document.getElementById('lastname').value;
-    var dob = document.getElementById('dob').value;
-    var sex = document.querySelector('input[name="sex"]:checked') ? document.querySelector('input[name="sex"]:checked').value : '';
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    var confirmPassword = document.getElementById('confirmPassword').value;
+window.onload= function(){
+if(localStorage)
+{
+    populate();
+    const form=document.getElementById('registrationForm');
+    form.addEventListener('submit',store);
+}
+else{
+    window.alert('localstorage is not supported');
+}
+}
+function store() {
+    let firstname = document.forms.personalinfo.firstname.value;
+    let lastname = document.forms.personalinfo.lastname.value;
+    let dob = document.forms.personalinfo.dob.value;
+    let sex = document.forms.personalinfo.sex.value;
+    let email = document.forms.personalinfo.email.value;
+    let password = document.forms.personalinfo.password.value;
+    let confirmPassword = document.forms.personalinfo.confirmPassword.value;
+    localStorage.setItem('firstname', firstname);
+    localStorage.setItem('lastname', lastname);
+    localStorage.setItem('dob', dob);
+    localStorage.setItem('sex', sex);
+    localStorage.setItem('email', email);
+    localStorage.setItem('password', password);
+    localStorage.setItem('confirmPassword', confirmPassword);
 
-    // Basic email validation
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
-
-    // Password confirmation
-    if (password !== confirmPassword) {
-        alert('Passwords do not match.');
-        return;
-    }
-
-    // Save data to session storage
-    var userData = {
-        firstname: firstname,
-        lastname: lastname,
-        dob: dob,
-        sex: sex,
-        email: email,
-        password: password
-    };
-    sessionStorage.setItem('userData', JSON.stringify(userData));
-
-    // Display data on the page
-    displayUserData();
-
-    alert('Registration successful!');
 }
 
-function displayUserData() {
-    var userData = JSON.parse(sessionStorage.getItem('userData'));
-    if (userData) {
-        var outputContainer = document.getElementById('output-container');
-        outputContainer.innerHTML = '<h2>Registration Successful!</h2>';
-        outputContainer.innerHTML += '<p><strong>First Name:</strong> ' + userData.firstname + '</p>';
-        outputContainer.innerHTML += '<p><strong>Last Name:</strong> ' + userData.lastname + '</p>';
-        outputContainer.innerHTML += '<p><strong>Date of Birth:</strong> ' + userData.dob + '</p>';
-        outputContainer.innerHTML += '<p><strong>Sex:</strong> ' + userData.sex + '</p>';
-        outputContainer.innerHTML += '<p><strong>Email:</strong> ' + userData.email + '</p>';
+function populate() {
+    let firstname = document.forms.personalinfo.firstname;
+    let lastname = document.forms.personalinfo.lastname;
+    let dob = document.forms.personalinfo.dob;
+    let sex = document.forms.personalinfo.sex;
+    let email = document.forms.personalinfo.email;
+    let password = document.forms.personalinfo.password;
+    let confirmPassword = document.forms.personalinfo.confirmPassword;
+
+    if (localStorage.getItem('firstname') != null) {
+        firstname.value = localStorage.getItem('firstname');
+    }
+
+    if (localStorage.getItem('lastname') != null) {
+        lastname.value = localStorage.getItem('lastname');
+    }
+
+    if (localStorage.getItem('dob') != null) {
+        dob.value = localStorage.getItem('dob');
+    }
+
+    if (localStorage.getItem('sex') != null) {
+        sex.value = localStorage.getItem('sex');
+    }
+
+    if (localStorage.getItem('email') != null) {
+        email.value = localStorage.getItem('email');
+    }
+
+    if (localStorage.getItem('password') != null) {
+        password.value = localStorage.getItem('password');
+    }
+
+    if (localStorage.getItem('confirmPassword') != null) {
+        confirmPassword.value = localStorage.getItem('confirmPassword');
     }
 }

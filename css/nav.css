@@ -17,6 +17,13 @@ a{
     text-decoration: none;
 }
 
+ul li .nlogin{
+  border: 10px 15px;
+  background-color: #00B4FC;
+  color: #fff;
+  cursor: pointer;
+}
+
 .navbar{
     min-height: 70px;
     display: flex;

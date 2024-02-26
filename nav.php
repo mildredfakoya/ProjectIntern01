@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/nav_loggedin.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/eval_assessment.css">
+    <link rel="stylesheet" href="css/css/appointment_vitals.css">
     
     <title>VitalGuard Clinic</title>
 </head>

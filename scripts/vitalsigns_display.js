@@ -41,14 +41,21 @@ function displayVitalSigns(){
     let bodyMassIndex = localStorage.getItem("bodyMassIndex");
     let temperature = localStorage.getItem("temperature");
 
-    container.innerHTML += "Date/Time: " + dateTime + "<br><br>";
-    container.innerHTML += "Blood Pressure: " + bloodPressure + " mmHg<br><br>";
-    container.innerHTML += "Pulse: " + pulse + " bpm<br><br>";
-    container.innerHTML += "Respiration: " + respiration + " breaths/minute<br><br>";
-    container.innerHTML += "Weight: " + weight + " kg</br><br>";
-    container.innerHTML += "Height: " + height + " meters<br><br>";
-    container.innerHTML += "Body Mass Index: " + bodyMassIndex + " kg/m<sup>2</sup><br><br>";
-    container.innerHTML += "Temperature: " + temperature + " &deg;C";
+    container.innerHTML += "<strong>Date/Time:<strong> " + dateTime + "<br><br>";
+    container.innerHTML += "<hr>";
+    container.innerHTML += "<strong>Blood Pressure:<strong>" + bloodPressure + " mmHg<br><br>";
+    container.innerHTML += "<hr>";
+    container.innerHTML += "<strong>Pulse:<strong>" + pulse + " bpm<br><br>";
+    container.innerHTML += "<hr>";
+    container.innerHTML += "<strong>Respiration:<strong>" + respiration + " breaths/minute<br><br>";
+    container.innerHTML += "<hr>";
+    container.innerHTML += "<strong>Weight:<strong>" + weight + " kg</br><br>";
+    container.innerHTML += "<strong><hr>";
+    container.innerHTML += "<strong>Height:<strong>" + height + " meters<br><br>";
+    container.innerHTML += "<hr>";
+    container.innerHTML += "<strong>Body Mass Index:<strong>" + bodyMassIndex + " kg/m<sup>2</sup><br><br>";
+    container.innerHTML += "<hr>";
+    container.innerHTML += "<strong>Temperature:<strong>" + temperature + " &deg;C<br><br>";
     container.innerHTML += "<hr>";
 
 }

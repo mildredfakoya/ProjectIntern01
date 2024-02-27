@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/registration.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/appointment_vitals.css">
     <link rel="stylesheet" href="css/appointment.css">
     <link rel="stylesheet" href="css/vitalsigns.css">
     <link rel="stylesheet" href="css/nav_loggedin.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/eval_assessment.css">
-    <link rel="stylesheet" href="css/css/appointment_vitals.css">
+
     
     <title>VitalGuard Clinic</title>
 </head>

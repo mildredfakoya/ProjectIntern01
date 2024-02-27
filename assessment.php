@@ -16,22 +16,25 @@
     <title>VitalGuard Clinic</title>
 </head>
 <body>
-    <header>
+<header>
         <nav class="navbar">
-            <img src="images/logo1.png" alt="image of two hands holding a sprouting plant">
+            <!--<img src="images/logo1.png" alt="image of two hands holding a sprouting plant">-->
 
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="index2.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="appoint_register.php" class="nav-link">Appointment</a>
                 </li>
                 <li class="nav-item">
                     <a href="registration.php" class="nav-link">Registration</a>
                 </li>
                 <li class="nav-item">
-                    <a href="assessment.php" class="nav-link">Assessment Forms</a>
+                    <a href="eval_assessment.php" class="nav-link">Evaluation Assessment</a>
+                </li>
+                <li class="nav-item">
+                    <a href="vitalsigns.php" class="nav-link">Vital Signs</a>
                 </li>
                 <li class="nav-item">
                     <a href="index.php" class="nav-link">Sign out</a>
@@ -45,6 +48,14 @@
 
         </nav>
     </header>
+
+
+
+
     <script src="scripts/nav.js"></script>
 </body>
 </html>
+
+<?php
+require_once "footer.php";
+ ?>

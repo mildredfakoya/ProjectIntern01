@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/registration.css">
@@ -12,8 +13,10 @@
     <link rel="stylesheet" href="css/vitalsigns.css">
     <link rel="stylesheet" href="css/nav_loggedin.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+
     
-    <title>VitalGuard Clinic</title>
+    <title>VitalGuard Clinic</title
 </head>
 <body>
     <header>
@@ -23,6 +26,9 @@
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="registration.php" class="nav-link">Registration</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">About</a>

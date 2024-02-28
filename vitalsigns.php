@@ -1,7 +1,11 @@
 <?php
   require_once "nav.php";
  ?>
-<body id="v_body">
+
+
+<body id="appv_body">
+
+
 
 <div class="appv_appoint">
         <h1>Vital Signs Data Registery</h1>
@@ -49,7 +53,12 @@
         <div class="col-2">
                 <div class="sidenav" id="mySidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="assessment.php">Assessment</a>
+
+
+                        <a href="index.php">Home</a>
+
+                        <a href="#">Logout</a>
+
                 </div>
                 <div id="main">
                         <span id="span" onclick="openNav()">&#9776;</span>
@@ -96,9 +105,11 @@
                     <input type="number" name="temperature" id="temperature" placeholder="exp. 100">
             </div><br>
 
+
             <div>
                 <button class="v_button" name="" type="submit" onclick="collectAndDisplayValues();">Save</button>
-               
+                <p class="appv_p">Please click on the toggle button on the left to logout</p>
+
             </div>
     </form>
     <div class="col-4">
@@ -349,4 +360,6 @@ document.getElementById("main").style.marginLeft= "0";
 </body>
 <?php
   require_once "footer.php";
+
  ?>
+

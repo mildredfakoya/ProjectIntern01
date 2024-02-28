@@ -11,8 +11,12 @@ require_once "nav.php";
     <link rel="stylesheet" href="css/appointment_vitals.css">
     <link rel="stylesheet" href="css/appointment.css">
     <link rel="stylesheet" href="css/vitalsigns.css">
-    <link rel="stylesheet" href="css/nav_loggedin.css">
-    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/appointment_vitals.css">
+    <link rel="stylesheet" href="css/.css">
+    <link rel="stylesheet" href="css/.css">
+    <link rel="stylesheet" href="css/.css">
+
     
     <title>VitalGuard Clinic</title>
 </head>

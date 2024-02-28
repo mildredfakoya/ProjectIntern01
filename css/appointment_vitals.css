@@ -69,8 +69,11 @@
 
 #appv_body {
   font-family: 'Times New Roman', Times, serif;
-  background-image: url('../images/vitals.png');
-  background-size: cover; 
+
+  background-color: rgb(240, 229, 229);
+  font-weight: bold;
+
+
   }
   
   @media screen and (max-height: 450px) {
@@ -99,9 +102,11 @@
 }
 
 .appv_appoint {
-  position: relative;
-  top: 0;
+
+
   background-color: #c7b7b7;
+
+
   padding: 20px;
   border: 1px solid #bdd6dd;
   border-radius: 5px;
@@ -110,7 +115,11 @@
 }
 
 .appv_appoint h1 {
+
+
   color: #350404;
+
+
   font-size: 24px;
   margin-top: 0;
   margin-bottom: 10px;
@@ -138,35 +147,14 @@
   background-color: #ddd;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #d4a5a5;
-  min-width: 160px;
-  max-height: 200px;
-  overflow-y: auto; 
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-}
+.appv_p{
+  font-style: italic;
+  font-size: small;
+  color: #36a9b1;
+  margin: 5px;
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .appv_p{

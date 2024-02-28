@@ -2,7 +2,10 @@
   require_once "nav.php";
  ?>
 
-<body id="app_body">
+
+<body id="appv_body">
+
+
     <div class="appv_appoint">
        <h1>Appointment Registration Form</h1>
     </div>
@@ -11,17 +14,18 @@
         <div class="col-3">
         <div class="sidenav" id="mySidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <a href="index.php">Home</a>
             <a href="javascript:void(0)" onclick="showAppointments()">View Appointments</a>
         </div>
         <div>
             <span id="app_span" onclick="openNav()">&#9776;</span>
-        </div>
-        <div id="pg">
-            VitalGuard<br>&nbsp&nbsp&nbsp&nbspClinic
+
         </div>
         </div>
         
     <form class="col-5" method="" action="" id="appointments" name="appointments"
+
        onsubmit="return validateAppointment();" autocomplete="off" >
        <h4><strong>VitalGuard</strong></h4><br>
        <label for="name1">Fullname:</label>
@@ -49,7 +53,7 @@
        <span id="reasonErr"></span>
     
            <button class="appointment_button" id="submit" onclick="saveAppointments()">Save</button>
-          
+
     </form>
 
            <div class="col-4" id="display-container"></div>
@@ -78,7 +82,10 @@
     }
     </script>
     
-</body>
-<?php
+
+     </body>
+     <?php
+
   require_once "footer.php";
- ?>
+ ?> 
+

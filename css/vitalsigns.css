@@ -1,5 +1,12 @@
 /*Styling Side Navigation Bar*/
+#v_body {
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('../images/Vitals.jpg');
+  background-size: cover; 
+  }
+
 .sidenav {
+
 
     height: 100%;
     width: 0;
@@ -113,3 +120,4 @@
           border-radius: 5px;
           margin-left: 100px;
       }
+

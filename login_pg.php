@@ -4,7 +4,7 @@ require_once "nav.php"
 
 </head>
 <body>
-<body class="lg_body" style="background-image: url('/img/bodybg.jpg');">
+<body class="lg_body" style="background-image: url('/img/bodybg.jpg');" alt="bgimage">
 <section>
 
 <div class="lg_text">
@@ -38,12 +38,12 @@ require_once "nav.php"
 
 
     <div class="lg_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('lg_id01').style.display='none'" class="lg_cancelbtn"><a href="#">Cancel</a></button>
+    <!--  <button type="button" onclick="document.getElementById('lg_id01').style.display='none'" class="lg_cancelbtn"><a href="#">Cancel</a></button>-->
       <span class="lg_pasw">Forgot <a href="#"> password?</a></span>
     </div>
 
     <div class="lg_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('lg_id01').style.display='none'" class="lg_cancelbtn"><a href="#">Cancel</a></button>
+     <!--  <button type="button" onclick="document.getElementById('lg_id01').style.display='none'" class="lg_cancelbtn"><a href="#">Cancel</a></button>-->
       <span class="lg_create_acc">Don't have an account? <a href="#">Register here</a></span>
     </div>
 

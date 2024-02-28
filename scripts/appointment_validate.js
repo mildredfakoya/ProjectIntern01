@@ -81,5 +81,4 @@ function validateAppointment() {
     } catch (err) {
     }
   }
-  
- 
+

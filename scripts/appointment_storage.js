@@ -10,14 +10,17 @@ function saveAppointments() {
 
     // Create appointment object
     let appointment = {
+
         fullName: fullName,
         hospitalRecordID: hospitalRecordID,
         phoneNumber: phoneNumber,
+
 
         appointment_d: appointment_d,
         appointment_time: appointment_time,
         reason: reason
     };
+
 
 
     // Store appointment data
@@ -35,4 +38,5 @@ function saveAppointments() {
         <strong>Reason for Appointment:</strong> ${reason}<br><br>
     `;
 }
+
 

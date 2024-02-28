@@ -1,12 +1,18 @@
 /*Styling Side Navigation Bar*/
+#v_body {
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('../images/Vitals.jpg');
+  background-size: cover; 
+  }
+
 .sidenav {
-  height: 100%;
-  width: 0;
   position: relative;
-  z-index: 1;
-  top: 70px;
+  top: 0px;
   left: 0;
-  background-color: rgb(4, 4, 124);
+  z-index: 1;
+  height: 50%;
+  width: 0;
+  background-color: #000f3a;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 0;
@@ -19,7 +25,7 @@
   margin: 10px;
   text-decoration: none;
   font-size: 17px;
-  color: #ffffff;
+  color: rgb(248, 237, 216);
   display: block;
   transition: 0.3s;
 }
@@ -33,23 +39,62 @@
 /*Styling of Toggle button*/
 #span{
   position: relative;
-  top: -130px;
+  top: -140px;
   font-size: 30px;
   cursor:pointer; 
   background-color: #818181;
   color: rgb(68, 185, 185);
-  margin-left: 60px;
+  margin-left: 20px;
+}
+
+#vg{
+  position: relative;
+  top: -10px;
+  margin-top: 100px;
+  height: 150px;
+  width: 150px;
+  margin-inline: auto;
+  background-color:#7c6868; 
+  border-radius: 50%;
+  padding: 40px 30px 30px 10px;
+  font-size: 170%;
+  font-weight: bold;
+  color: #63d0d8;
+}
+
+#vg3{
+  position: relative;
+  top: -10px;
+  left: 30px;
+  margin-top: 80px;
+  margin-inline: auto;
+  padding: 5px;
+  background-color: #7c6868;
+  color: #63d0d8;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 40%;
 }
 
 #vitals_form {
     position: relative;
-    top: -70px;
-    left: 0px;
+    top: -60px;
+    left: 20px;
     border-radius: 5px;
     width: auto;
     margin: 80px;
     padding: 20px 20px;
     font-weight: bold;
+    background-color: rgb(240, 223, 223);
+    box-shadow: #cfc3c3 0px 0px 0px 2px;
+    }
+
+    h4{
+      text-shadow: #7c6868 2px;
+      box-shadow: #7c6868 0 3px;
     }
 
     /* Styling form-control Class */
@@ -93,13 +138,143 @@
       background-color: rgb(180, 204, 204);
     }
 
-    #display-container{
-        position: relative;
-        top: 40px;
-        left: 200px;
-        color: rgb(16, 91, 97);
-        width: auto;
-        font-size: large;
-        border: #777 solid;
-        border-radius: 10px;
+    table{
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      max-width: 100%;
+      height: 100%;
     }
+
+     th, td{
+      border: 2px solid;
+      height: 50px;
+      width: 50px;
+     }
+
+  /* The Modal (background) */
+  .news1_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /*background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+
+  .news1_modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /*5% from the top, 15% from the bottom and centered*/
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+
+  /* Add Zoom Animation */
+.news1_animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+.news1_button{
+  color: #555;
+  background-color: rgb(180, 204, 204);
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #36a9b1;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+caption{
+  background-color: #ffffff;
+  color: #7c6868;
+  border: solid 2px #000000;
+  padding: 5px;
+  font-weight: bold;
+}
+
+p{
+  text-align: left;
+  font-weight: bold;
+  padding: 3px;
+}
+
+#hmain{
+  background-color: rgb(136, 198, 223);
+}
+
+#hmin{
+  background-color: #e2d6c6;
+}
+
+#hsub{
+  background-color: rgb(171, 226, 226);
+}
+
+#emergent{
+  background-color: rgb(245, 125, 125);
+}
+
+#urgent{
+  background-color: rgb(236, 149, 117);
+}
+
+#elective{
+  background-color: #4CAF50;
+}
+
+ /* The Modal (background) */
+ .news2_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.news2_modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /*5% from the top, 15% from the bottom and centered*/
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+ /* Add Zoom Animation */
+ .news2_animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+.news2_button{
+  color: #555;
+  background-color: rgb(180, 204, 204);
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #36a9b1;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+

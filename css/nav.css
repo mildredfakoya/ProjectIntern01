@@ -17,6 +17,13 @@ a{
     text-decoration: none;
 }
 
+ul li .nlogin{
+  border: 10px 15px;
+  background-color: #00B4FC;
+  color: #fff;
+  cursor: pointer;
+}
+
 .navbar{
     min-height: 70px;
     display: flex;
@@ -95,7 +102,9 @@ a{
 
     .nav-menu.active{
         left: 0;
+        
     }
+
 }
 
 
@@ -117,6 +126,7 @@ a{
   top: 0px;
   /*z-index: -1; This will tulk in the modal under the nav bar on scroll
 }
+
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -144,9 +154,11 @@ input[type=text], input[type=password] {
   padding: 16px;
 }
 
+
 span.lg_pasw {
   float: center;
   padding-top: 16px;
+
 }
 
 /* The Modal (background) */
@@ -181,6 +193,7 @@ span.lg_pasw {
   color: #000;
   font-size: 35px;
   font-weight: bold;
+
 }
 
 .lg_close:hover, .lg_close:focus {

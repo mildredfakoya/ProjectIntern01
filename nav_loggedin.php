@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/nav_loggedin.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/eval_assessment.css">
+    <link rel="stylesheet" href="css/contact.css">
     
     <title>VitalGuard Clinic</title>
 </head>
@@ -22,19 +23,19 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link">Home</a>
+                    <a href="index2.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="appoint_register.php" class="nav-link">Appointment</a>
+                    <a href="registration.php" class="nav-link">Registration</a>
                 </li>
                 <li class="nav-item">
-                    <a href="vitalsigns.php" class="nav-link">Vital signs</a>
+                    <a href="assessment.php" class="nav-link">Assessment Forms</a>
                 </li>
                 <li class="nav-item">
-                    <a href="nav.php" class="nav-link">Sign out</a>
+                    <a href="index.php" class="nav-link">Sign out</a>
                 </li>
             </ul>
             <div class="hamburger">

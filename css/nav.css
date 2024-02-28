@@ -105,14 +105,27 @@ ul li .nlogin{
         
     }
 
-    .lg_close:hover, .lg_close:focus {
-        color: red;
-        cursor: pointer;
-      }
 }
 
 
 
+
+
+
+
+
+
+
+/* general reset */
+/*
+
+
+.lg_modal{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /*z-index: -1; This will tulk in the modal under the nav bar on scroll
+}
 
 
 /* Full-width input fields */
@@ -141,15 +154,11 @@ input[type=text], input[type=password] {
   padding: 16px;
 }
 
-.lg_pasw {
+
+span.lg_pasw {
   float: center;
   padding-top: 16px;
-  color: #005273;
-}
 
-.lg_clkble{
-  color: #2f21f9;
-  text-decoration: underline;
 }
 
 /* The Modal (background) */
@@ -184,7 +193,7 @@ input[type=text], input[type=password] {
   color: #000;
   font-size: 35px;
   font-weight: bold;
-  cursor: pointer;
+
 }
 
 .lg_close:hover, .lg_close:focus {

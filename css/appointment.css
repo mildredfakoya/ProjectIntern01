@@ -1,23 +1,19 @@
 #app_body{
-  background-image: url('../images/stepsbeat.jpg');
+  background-image: url('../images/vitals.png');
   background-size: cover;
 }
 
 .sidenav {
-
-    height: 100%;
-    width: 0;
-    position: relative;
-    z-index: 1;
-    top: 0;
-    left: 0;
-
-    background-color: rgb(2, 2, 43);
-
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 0;
-
+  position: relative;
+  top: -10px;
+  left: 0; 
+  z-index: 1;
+  height: 100%;
+  width: 0;
+  background-color: #000f3a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0;
 }
 
 .sidenav a {
@@ -38,30 +34,15 @@
 
 #app_span{
 position: relative;
-top: 60px;
+top: -100px;
 font-size: 30px;
-cursor:pointer; 
-background-color: #818181;
-color: rgb(68, 185, 185);
-margin-left: 60px;
+cursor:pointer;
+background-color: #a2f0ec;
+color: rgb(223, 200, 200);
+margin-left: 150px;
 }
 
-#pg{
-  position: relative;
-  top: -10px;
-  margin-top: 100px;
-  height: 150px;
-  width: 150px;
-  margin-inline: auto;
-  background-color:#977575; 
-  border-radius: 50%;
-  padding: 40px 30px 30px 10px;
-  font-size: 170%;
-  font-weight: bold;
-  color: #63d0d8;
-}
-
-
+/*style for the appointment form*/
 #appointments {
   position: relative;
   top: -10px;
@@ -71,31 +52,17 @@ margin-left: 60px;
   margin-left: 50px;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgb(223, 200, 200);
+  background-color: rgb(209, 182, 182);
   box-shadow: #cfc3c3 0px 0px 0px 2px;
 }
 
-
-#app_span{
-  position: relative;
-  top: 60px;
-
-
-  font-size: 30px;
-  cursor:pointer; 
-  background-color: #818181;
-  color: rgb(68, 185, 185);
-  margin-left: 60px;
-
-  }
-
-  #appointments {
-
-    max-width: 400px;
-    margin: 0;
+  #h2{
+    position: relative;
+    top: 0px;
+    left: 100px;
     margin-inline: auto;
-    padding: 20px;
-
+    color: #93dbd9;
+    font-size: x-large;
   }
   
   #appointments label {
@@ -109,7 +76,7 @@ margin-left: 60px;
   #appointments input[type="time"],
   #appointments textarea,
   #appointments select {
-    background-color: rgb(180, 204, 204);
+    background-color: #95e0de;
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -117,6 +84,11 @@ margin-left: 60px;
     border: 1px solid #36a9b1;
     border-radius: 4px;
     box-sizing: border-box; 
+}
+
+#appointments textarea{
+  height: 50px;
+  resize: none;
 }
   
   #appointments input[type="text"]:focus,
@@ -130,7 +102,8 @@ margin-left: 60px;
   }
   
   .appointment_button {
-    background-color: #4CAF50;
+    background-color: #0d2770;
+    color: #a4fefb;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -138,50 +111,29 @@ margin-left: 60px;
   }
 
   .appointment_button:hover {
-    background-color: rgb(180, 204, 204);
+    background-color: #95e0de;
+    color: rgb(196, 158, 158);
     box-shadow: 0px 0px 2px 1px rgba(2, 37, 71, 0.75);
-  }
-  
-  #app_span{
-    position: relative;
-
-    top: -130px;
-
-    font-size: 30px;
-    cursor:pointer; 
-    background-color: #818181;
-    color: rgb(68, 185, 185);
-    margin-left: 60px;
   }
   
   span{
     background-color: #ffffff;
     color: red;
     font-weight: bold;
-
   }
 
   #display-container{
-      color: rgb(27, 107, 112);
-
-      max-width: 400px;
-      margin: auto 0;
-      margin-top: 30px;
-      margin-left: 20px;
-      padding: 20px;
-      font-size: large;
-      border: #271c1c solid;
-      border-radius: 10px;
-      box-shadow: #271c1c 5px 3px 2px 1px;
-
+    position: relative;
+    top: 0px;
+    left: 50px;
+    margin-inline: auto;
+    padding: 10px;
+    color: rgb(16, 91, 97);
+    width: 400px;
+    height: auto;
+    font-size: large;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #93dbd9;
+    box-shadow: #7c6868 3px 3px 2px 1px;
   }
-
-}
-
-span{
-  background-color: #ffffff;
-  color: red;
-}
-
-
-

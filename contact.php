@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contact.css">
-    <title>Document</title>
-</head>
-<body>
+<?php
+require_once "nav_loggedin.php";
+ ?>
+<body class="c_body">
     <div class="wrapper">
         <h2>Contact Us</h2>
         <div id="error_message"></div>
@@ -35,4 +30,6 @@
     </div>
     <script src="scripts/contact.js"></script>
 </body>
-</html>
+<?php
+require_once "footer.php";
+ ?>

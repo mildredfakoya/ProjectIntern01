@@ -1,0 +1,46 @@
+.h-section{
+    width: 100%;
+    height: 33vh;
+    background-color: rgb(19, 103, 193);
+    padding: 60px 100px;
+}
+
+.canvas{
+    padding: 50px;
+    background-color: white;
+    border-radius: 50px 50px 0 0;
+    width: 100%;
+    height: 30vh;
+    z-index: 2;   
+}
+
+.h-h2{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 3rem;
+    max-width: 600px;
+}
+
+.bbdy{
+    padding: 50px 130px;
+
+    .h-ul{
+        list-style-type: disc;
+    }
+}
+
+.h-h3{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.p-tag{
+    font-weight: normal;
+    max-width: 1000px;
+}
+
+.entity-li{
+    transform: scale(1.4);
+}
+

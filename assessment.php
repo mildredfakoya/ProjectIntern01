@@ -32,7 +32,7 @@
                     <a href="registration.php" class="nav-link">Registration</a>
                 </li>
                 <li class="nav-item">
-                    <a href="eval_assessment.php" class="nav-link">Evaluation Assessment</a>
+                    <a href="assessment_forms.php" class="nav-link">Evaluation Assessment</a>
                 </li>
                 <li class="nav-item">
                     <a href="vitalsigns.php" class="nav-link">Vital Signs</a>

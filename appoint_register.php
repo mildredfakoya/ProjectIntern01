@@ -2,32 +2,32 @@
   require_once "nav.php";
  ?>
 
-
-<body id="appv_body">
-
-
-    <div class="appv_appoint">
-       <h1>Appointment Registration Form</h1>
-    </div>
+<body id="app_body">
+    
     <p class="app_p">Please click the toggle button below to view Appointments</p>
     <section class="row">
-        <div class="col-3">
+    <div class="col-3">
         <div class="sidenav" id="mySidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-            <a href="index.php">Home</a>
+            <a href="assessment.php">Assessment</a>
             <a href="javascript:void(0)" onclick="showAppointments()">View Appointments</a>
         </div>
         <div>
             <span id="app_span" onclick="openNav()">&#9776;</span>
-
         </div>
+        <div id="h2">
+        <h2>VitalGuard<br>&nbsp&nbsp&nbsp&nbsp&nbspClinic</h2>
         </div>
         
-    <form class="col-5" method="" action="" id="appointments" name="appointments"
-
+    </div>
+        
+    <form class="col-4" id="appointments" name="appointments"
        onsubmit="return validateAppointment();" autocomplete="off" >
-       <h4><strong>VitalGuard</strong></h4><br>
+
+       <h4><strong>VitalGuard</strong></h4>
+    <div>
+       <h1>Appointment Form</h1>
+    </div><br>
        <label for="name1">Fullname:</label>
        <input type="text" id="name1" name="name1" placeholder="enter name" autocomplete="on">
        <span id="name1Err"></span>
@@ -37,7 +37,7 @@
        <span id="hospitalrecErr"></span>
     
        <label for="phone">Phone Number:</label>
-       <input type="text" id="phone" name="phone">
+       <input type="text" id="phone" name="phone" autocomplete="off">
        <span id="phoneErr"></span>
     
        <label for="appointment_d">Date of Appointment:</label>
@@ -52,8 +52,8 @@
        <textarea id="reason" name="reason"></textarea>
        <span id="reasonErr"></span>
     
-           <button class="appointment_button" id="submit" onclick="saveAppointments()">Save</button>
-
+        <button class="appointment_button" id="submit" onclick="saveAppointments()">Submit</button>
+          
     </form>
 
            <div class="col-4" id="display-container"></div>
@@ -82,10 +82,7 @@
     }
     </script>
     
-
-     </body>
-     <?php
-
+</body>
+<?php
   require_once "footer.php";
- ?> 
-
+ ?>

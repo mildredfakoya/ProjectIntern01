@@ -24,7 +24,7 @@ function saveAppointments() {
 
 
     // Store appointment data
-    sessionStorage.setItem('lastAppointment', JSON.stringify(appointment));
+    localStorage.setItem('lastAppointment', JSON.stringify(appointment));
 
     // Display values
     let displayContainer = document.getElementById('display-container');

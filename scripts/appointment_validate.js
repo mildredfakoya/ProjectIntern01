@@ -74,7 +74,7 @@ function validateAppointment() {
             return false;
         }
   
-        alert("Appointment is submitted!")
+        alert("Appointment submitted successfully!")
         
         return true; // Form validated successfully
   

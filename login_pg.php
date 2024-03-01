@@ -34,8 +34,7 @@ require_once "nav.php"
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
-    </div>
-
+    </div> 
 
     <div class="lg_container" style="background-color:#f1f1f1">
     <!--  <button type="button" onclick="document.getElementById('lg_id01').style.display='none'" class="lg_cancelbtn"><a href="#">Cancel</a></button>-->
@@ -44,7 +43,7 @@ require_once "nav.php"
 
     <div class="lg_container" style="background-color:#f1f1f1">
      <!--  <button type="button" onclick="document.getElementById('lg_id01').style.display='none'" class="lg_cancelbtn"><a href="#">Cancel</a></button>-->
-      <span class="lg_create_acc">Don't have an account? <a href="#">Register here</a></span>
+      <span class="lg_create_acc">Don't have an account? <a href="registration.php">Register here</a></span>
     </div>
 
 

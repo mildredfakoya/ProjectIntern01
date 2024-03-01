@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/registration.css">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/eval_assessment.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/assessment_home.css">
     
     <title>VitalGuard Clinic</title>
 </head>
@@ -29,10 +31,7 @@
                     <a href="appoint_register.php" class="nav-link">Appointment</a>
                 </li>
                 <li class="nav-item">
-                    <a href="registration.php" class="nav-link">Registration</a>
-                </li>
-                <li class="nav-item">
-                    <a href="assessment_forms.php" class="nav-link">Evaluation Assessment</a>
+
                 </li>
                 <li class="nav-item">
                     <a href="vitalsigns.php" class="nav-link">Vital Signs</a>
@@ -49,6 +48,7 @@
 
         </nav>
     </header>
+   
 
 
 
@@ -57,6 +57,3 @@
 </body>
 </html>
 
-<?php
-require_once "footer.php";
- ?>

@@ -4,6 +4,7 @@ require_once "nav.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/registration.css">
@@ -12,13 +13,10 @@ require_once "nav.php";
     <link rel="stylesheet" href="css/appointment.css">
     <link rel="stylesheet" href="css/vitalsigns.css">
 
-    <link rel="stylesheet" href="css/appointment_vitals.css">
-    <link rel="stylesheet" href="css/.css">
-    <link rel="stylesheet" href="css/.css">
-    <link rel="stylesheet" href="css/.css">
+    
 
     
-    <title>VitalGuard Clinic</title>
+    <title>VitalGuard Clinic</title
 </head>
 <body>
     <header>
@@ -28,6 +26,9 @@ require_once "nav.php";
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="registration.php" class="nav-link">Registration</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">About</a>
@@ -71,6 +72,7 @@ require_once "nav.php";
             <div class="lg_container" style="">
           <span class="lg_pasw">Forgot <a href="#" class="lg_clkble"> password?</a></span>
             </div>
+
 
 
 <div id="lg_id01" class="lg_modal">

@@ -5,6 +5,37 @@
   background-size: cover; 
   }
 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d4a5a5;
+    min-width: 160px;
+    max-height: 200px;
+    overflow-y: auto; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
 .sidenav {
   position: relative;
   top: 0px;
@@ -36,16 +67,16 @@
   margin-left: 50px;
 }
 
-/*Styling of Toggle button*/
-#span{
+#app_span{
   position: relative;
-  top: -140px;
+  top: -100px;
   font-size: 30px;
-  cursor:pointer; 
-  background-color: #818181;
-  color: rgb(68, 185, 185);
-  margin-left: 20px;
-}
+  cursor:pointer;
+  background-color: #93dbd9;
+  color: rgb(223, 200, 200);
+  margin-left: 150px;
+  flex: 1;
+  }
 
 #vg{
   position: relative;
@@ -54,12 +85,14 @@
   height: 150px;
   width: 150px;
   margin-inline: auto;
-  background-color:#7c6868; 
+  background-color:rgb(201, 157, 157); 
   border-radius: 50%;
-  padding: 40px 30px 30px 10px;
+  padding: 50px 20px 40px 10px;
   font-size: 170%;
   font-weight: bold;
-  color: #63d0d8;
+  color: #93dbd9;
+  flex: 1;
+  opacity: 0.5;
 }
 
 #vg3{
@@ -69,8 +102,8 @@
   margin-top: 80px;
   margin-inline: auto;
   padding: 5px;
-  background-color: #7c6868;
-  color: #63d0d8;
+  background-color: rgb(201, 157, 157);
+  color: #93dbd9;
   width: 400px;
   height: 40px;
   text-align: center;
@@ -88,7 +121,7 @@
     margin: 80px;
     padding: 20px 20px;
     font-weight: bold;
-    background-color: rgb(240, 223, 223);
+    background-color: rgb(209, 182, 182);
     box-shadow: #cfc3c3 0px 0px 0px 2px;
     }
 
@@ -112,7 +145,7 @@
     /* Styling form-control input, 
     select, textarea */
     .form-control input {
-      background-color: rgb(180, 204, 204);
+      background-color: #95e0de;
         border: 1px solid #777;
         border-radius: 5px;
         font-family: inherit;
@@ -124,18 +157,18 @@
     }
 
     .v_button {
-        border: 1px solid #777;
-        border-radius: 5px;
-        font-family: inherit;
-        font-size: large;
-        display: block;
-        background-color: #4CAF50;
-        width: 60px;
-        height: 30px;
+      background-color: #0d2770;
+      color: #a4fefb;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
 
     .v_button:hover{
-      background-color: rgb(180, 204, 204);
+      background-color: #95e0de;
+      color: rgb(196, 158, 158);
+      box-shadow: 0px 0px 2px 1px rgba(2, 37, 71, 0.75);
     }
 
     table{
@@ -192,7 +225,7 @@
 
 .news1_button{
   color: #555;
-  background-color: rgb(180, 204, 204);
+  background-color: #a4fefb;
   text-decoration: none;
   font-size: 14px;
   border: 1px solid #36a9b1;
@@ -276,5 +309,21 @@ p{
   padding: 5px 10px;
   border-radius: 3px;
   margin-right: 5px;
+}
+
+#display-container2{
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-inline: auto;
+  padding: 10px;
+  color: rgb(16, 91, 97);
+  width: 400px;
+  height: auto;
+  font-size: large;
+  text-align: left;
+  border-radius: 10px;
+  background-color: #93dbd9;
+  box-shadow: #7c6868 3px 3px 2px 1px;
 }
 

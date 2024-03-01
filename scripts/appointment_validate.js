@@ -1,4 +1,5 @@
 function validateAppointment() {
+
     try {
         let name1 = document.forms.appointments.name1.value;
         let hospitalrec = document.forms.appointments.hospitalrec.value;
@@ -73,10 +74,11 @@ function validateAppointment() {
             return false;
         }
   
-        alert("Appointment is submitted!")
+        alert("Appointment submitted successfully!")
         
         return true; // Form validated successfully
   
     } catch (err) {
     }
   }
+

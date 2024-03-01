@@ -29,7 +29,7 @@ function collectAndDisplayValues() {
 }
 
 function displayVitalSigns(){
-    let container = document.getElementById("display-container");
+    let container = document.getElementById("display-container2");
     container.innerHTML = "";
 
     let dateTime = localStorage.getItem("dateTime");

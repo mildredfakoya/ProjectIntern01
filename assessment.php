@@ -31,7 +31,7 @@
                     <a href="appoint_register.php" class="nav-link">Appointment</a>
                 </li>
                 <li class="nav-item">
-                    <a href="eval_assessment.php" class="nav-link">Evaluation Assessment</a>
+
                 </li>
                 <li class="nav-item">
                     <a href="vitalsigns.php" class="nav-link">Vital Signs</a>

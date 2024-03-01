@@ -1,7 +1,7 @@
 <?php
-  require_once "nav.php";
+require_once "nav.php";
  ?>
-<body id="v_body">
+<body id="appv_body">
 
 <div class="appv_appoint">
         <h1>Vital Signs Data Registery</h1>
@@ -10,16 +10,16 @@
                 <button class="news1_button">Patient</button>
                 <div class="dropdown-content">
     <a href="Patient">Patient A</a>
-    <a href="Patient">PAtient B</a>
+    <a href="Patient">Patient B</a>
     <a href="Patient">Patient C</a>
     <a href="Patient">Patient D</a>
-    <a href="Patient">PAtient E</a>
+    <a href="Patient">Patient E</a>
     <a href="Patient">Patient F</a>
     <a href="Patient">Patient G</a>
-    <a href="Patient">PAtient B</a>
+    <a href="Patient">Patient B</a>
     <a href="Patient">Patient H</a>
     <a href="Patient">Patient I</a>
-    <a href="Patient">PAtient J</a>
+    <a href="Patient">Patient J</a>
     <a href="Patient">Patient K</a>
   </div>
                 </div>
@@ -44,15 +44,17 @@
                 </div>
             </nav>
     </div>
-    <p class="appv_p">Click this button for the assessment page</p>
+    <p class="app_p">Click the below button to the assessment forms </p>
    <section class="row">
         <div class="col-2">
                 <div class="sidenav" id="mySidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a href="assessment.php">Assessment</a>
+                        <a href="index2.php">Home</a>
+                       
                 </div>
                 <div id="main">
-                        <span id="span" onclick="openNav()">&#9776;</span>
+                        <span id="app_span" onclick="openNav()">&#9776;</span>
                 </div>
                 </div>
 
@@ -96,13 +98,14 @@
                     <input type="number" name="temperature" id="temperature" placeholder="exp. 100">
             </div><br>
 
+
             <div>
                 <button class="v_button" name="" type="submit" onclick="collectAndDisplayValues();">Save</button>
-               
+
             </div>
     </form>
     <div class="col-4">
-        <div id="display-container"></div>
+        <div id="display-container2"></div>
         <div id="vg">
                 VitalGuard<br>&nbsp&nbsp&nbsp&nbspClinic
         </div>
@@ -114,7 +117,7 @@
     </section>
 
     <div id="news1" style="overflow-x: auto;" class="news1_modal">
-        <table class="news1_modal-content news1_animate" action="/action_page.php" method="post">
+        <table class="news1_modal-content news1_animate">
         
                       <caption>VitalGuard NEWS (National Early Warning Score)</caption>
                 <thead>
@@ -145,7 +148,7 @@
                                 <td id="emergent">&nbsp;&#8805; 25</td>
                             </tr>
                             <tr>
-                                <td id="hsub">Oxygen Saturation(%)</td>
+                                <td id="hsub">Oxygen Saturation(SPO<sub>2</sub>%)</td>
                                 <td id="emergent">&nbsp; &#8804; 91</td>
                                 <td id="urgent">92-93</td>
                                 <td id="elective">94-95</td>
@@ -249,7 +252,7 @@
     </div>
 
     <div id="news2" style="overflow-x: auto;" class="news2_modal">
-        <table class="news2_modal-content news2_animate" action="/action2_page.php" method="post">
+        <table class="news2_modal-content news2_animate">
                 
                       <caption>VitalGuard Normal Vital Signs Range</caption>
                 <thead>
@@ -317,7 +320,6 @@
                             </table>
 </div> 
 
-
 <script>
 function openNav() {
 document.getElementById("mySidenav").style.width = "200px";
@@ -347,6 +349,8 @@ document.getElementById("main").style.marginLeft= "0";
     </script>
    <script src="scripts/vitalsigns_display.js"></script> 
 </body>
+ </html>
 <?php
-  require_once "footer.php";
+require_once "footer.php";
  ?>
+

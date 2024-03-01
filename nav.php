@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/nav_loggedin.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/assessment_home.css">
+    
 
     
     <title>VitalGuard Clinic</title
@@ -75,7 +77,7 @@
 
             <div class="lg_container" style="">
             
-            <span class="lg_create_acc lg_pasw">Don't have an account? <a href="#" class="lg_clkble">Register here</a></span>
+            <span class="lg_create_acc lg_pasw">Don't have an account? <a href="registration.php" class="lg_clkble">Register here</a></span>
             </div>
 
 

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/eval_assessment.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/assessment_home.css">
     
     <title>VitalGuard Clinic</title>
 </head>
@@ -47,6 +48,7 @@
 
         </nav>
     </header>
+   
 
 
 
@@ -55,6 +57,3 @@
 </body>
 </html>
 
-<?php
-require_once "footer.php";
- ?>

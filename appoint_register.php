@@ -1,5 +1,5 @@
 <?php
-  require_once "nav.php";
+  require_once "assessment.php";
  ?>
 
 <body id="app_body">
@@ -21,7 +21,7 @@
         
     </div>
         
-    <form class="col-4" id="appointments" name="appointments"
+    <form class="col-5" id="appointments" name="appointments"
        onsubmit="return validateAppointment();" autocomplete="off" >
 
        <h4><strong>VitalGuard</strong></h4>
@@ -84,5 +84,5 @@
     
 </body>
 <?php
-  require_once "footer.php";
- ?>
+require_once "footer.php"
+ ?>    

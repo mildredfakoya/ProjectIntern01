@@ -30,11 +30,17 @@ function saveAppointments() {
     let displayContainer = document.getElementById('display-container');
     displayContainer.innerHTML = `
         <h3>Last Appointment Details:</h3><br>
+        <hr>
         <strong>Full Name:</strong> ${fullName}<br><br>
+        <hr>
         <strong>Hospital Record ID:</strong> ${hospitalRecordID}<br><br>
+        <hr>
         <strong>Phone Number:</strong> ${phoneNumber}<br><br>
+        <hr>
         <strong>Date of Appointment:</strong> ${appointment_d}<br><br>
+        <hr>
         <strong>Time of Appointment:</strong> ${appointment_time}<br><br>
+        <hr>
         <strong>Reason for Appointment:</strong> ${reason}<br><br>
     `;
 }

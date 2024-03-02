@@ -1,22 +1,25 @@
-<?php
-require_once "nav.php";
- ?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/registration.css">
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/appointment_vitals.css">
     <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="css/assessment_home.css">
+    <link rel="stylesheet" href="css/assessment.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/eval_assessment.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/nav_loggedin.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/registration.css">
     <link rel="stylesheet" href="css/vitalsigns.css">
-
     
 
-    
-    <title>VitalGuard Clinic</title
+    <title>VitalGuard Clinic</title>
 </head>
 <body>
     <header>
@@ -109,7 +112,7 @@ require_once "nav.php";
 
   <div class="lg_container" style="background-color:#f1f1f1">
   
-  <span class="lg_create_acc">Don't have an account? <a href="#">Register here</a></span>
+  <span class="lg_create_acc">Don't have an account? <a href="registration.php">Register here</a></span>
   </div>
 
 

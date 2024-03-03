@@ -8,7 +8,7 @@ function validateAppointment() {
         let appointment_time = document.forms.appointments.appointment_time.value;
         let reason = document.forms.appointments.reason.value;
         let name1Pattern = /^[A-Za-z\s]+$/;
-        let phonePattern = /^\d{3}-\d{3}-\d{4}$/;
+        let phonePattern = /^\d{10}$/;
         let currentTime = new Date();
         let selectedDateTime = new Date(appointment_d + 'T' + appointment_time);
   
@@ -33,7 +33,7 @@ function validateAppointment() {
             document.forms.appointments.phone.focus();
             return false;
         } else if (!phone.match(phonePattern)) {
-            document.getElementById('phoneErr').innerHTML = "Please enter a valid phone number (e.g., 123-456-7890)";
+            document.getElementById('phoneErr').innerHTML = "Please enter a valid phone number";
             document.forms.appointments.phone.focus();
             return false;
         } else {

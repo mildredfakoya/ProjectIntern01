@@ -23,8 +23,8 @@ require_once "assessment.php";
     <a href="Patient">Patient K</a>
   </div>
                 </div>
-                <button class="news1_button" onclick="document.getElementById('news1').style.display='block'" style="width:auto;">NEWS</button>
-                <button class="news1_button" onclick="document.getElementById('news2').style.display='block'" style="width:auto;">Vitals</button>
+                <button class="news1_button" onclick="document.getElementById('news1').style.display='block'" style="width:auto;">NEWS Score</button>
+                <button class="news1_button" onclick="document.getElementById('news2').style.display='block'" style="width:auto;">Vitals Range</button>
                 <div class="dropdown">
                 <button class="news1_button">Services</button>
                 <div class="dropdown-content">

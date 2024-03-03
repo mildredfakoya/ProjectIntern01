@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,7 +36,7 @@
                     <a href="assessment_home.php" class="nav-link">Assessment Forms</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link">Sign out</a>
+                    <a href="landing.php" class="nav-link">Sign out</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -50,4 +49,3 @@
     </header>
     <script src="scripts/nav.js"></script>
 </body>
-</html>

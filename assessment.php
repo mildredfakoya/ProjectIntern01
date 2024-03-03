@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,13 +31,13 @@
                     <a href="appoint_register.php" class="nav-link">Appointment</a>
                 </li>
                 <li class="nav-item">
-
+                    <a href="assessment_forms.php" class="nav-link">Evaluation Assessment</a>
                 </li>
                 <li class="nav-item">
                     <a href="vitalsigns.php" class="nav-link">Vital Signs</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link">Sign out</a>
+                    <a href="landing.php" class="nav-link">Sign out</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -51,10 +50,6 @@
     </header>
    
 
-
-
-
     <script src="scripts/nav.js"></script>
 </body>
-</html>
 

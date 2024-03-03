@@ -1,7 +1,7 @@
 <?php
 require_once "assessment.php";
  ?>
- <body>
+ <body class="b_Bdy">
     <div class="h-section">
         <div class="canvas">
             <div class="h-h2">Assessments and evaluations for mental illness treatment</div>

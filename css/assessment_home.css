@@ -1,18 +1,28 @@
+.b_Bdy{
+    display: flex;
+    background-color: white ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .h-section{
-    width: 100%;
+    max-width: 100vw;
     height: 33vh;
     background-color: rgb(19, 103, 193);
     padding: 60px 100px;
 }
 
+
 .canvas{
     padding: 50px;
     background-color: white;
     border-radius: 50px 50px 0 0;
-    width: 100%;
+    max-width: 100%;
     height: 30vh;
     z-index: 2;   
 }
+
 
 .h-h2{
     font-size: 40px;
@@ -23,10 +33,11 @@
 
 .bbdy{
     padding: 50px 130px;
+}
 
-    .h-ul{
-        list-style-type: disc;
-    }
+.h-ul li{
+    list-style-type: none;
+    padding-right: 10px;
 }
 
 .h-h3{
@@ -43,4 +54,3 @@
 .entity-li{
     transform: scale(1.4);
 }
-

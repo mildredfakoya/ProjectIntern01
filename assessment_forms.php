@@ -1,61 +1,6 @@
 <?php
 require_once "assessment_form.php";
  ?>
-    <style>
-
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;;
-            background-color: #d1c6a7;
-        }
-
-        nav {
-            width: 200px;
-            background-color: #f1f1f1;
-            padding: 10px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            margin: 50px;
-            padding: 25px;
-            overflow: none;
-            text-decoration: none;
-           border-radius: 10px;
-           transition: background-color 0.3s ease; /* Add smooth transition */
-        }
-
-        .dis_assess_nav :hover{
-          background-color: #a58e71; /* Change background color on hover */
-          color: #FFFFFF; /* You can adjust other styles too */
-        }
-
-        .container {
-            flex: 1;
-            padding: 18px;
-            margin-top: 50px;
-            margin-right: 7px;
-            border: 3px solid #654e3b; /* Adjustment for the border width and color as needed */
-            height: auto; /* Set the desired height */
-          }
-
-
-    form {
-            display: none;
-        }
-
-        h2 {
-           text-align: center;
-            margin-bottom: 15px;
-        }
-
-        @media (max-width: 768px) {
-        /* Styles for small screens */
-     }
-
-      @media (min-width: 769px) {
-      /* Styles for larger screens */
-    }
-
-    </style>
-</head>
 <body>
 
 <nav class="dis_assess_nav">
@@ -83,37 +28,41 @@ require_once "assessment_form.php";
     <br/>
     <br/>
 
-    <button onclick="showForm('neurodevelopment')">Anxiety Disorder</button>
+    <button onclick="showForm('anxiety')">Anxiety Disorder</button>
     <br/>
     <br/>
 
-    <button onclick="showForm('neurodevelopment')">Depressive Disorder</button>
+    <button onclick="showForm('depression')">Depressive Disorder</button>
     <br/>
     <br/>
 
-    <button onclick="showForm('neurodevelopment')">Bipolar Disorder</button>
+    <button onclick="showForm('bipolar')">Bipolar Disorder</button>
     <br/>
     <br/>
 
-    <button onclick="showForm('neurodevelopment')">Obsessive Compulsive Disorder</button>
+    <button onclick="showForm('Obsessive_compulsive')">Obsessive Compulsive Disorder</button>
     <br/>
     <br/>
 
-    <button onclick="showForm('neurodevelopment')">Dissociative Disorder</button>
+    <button onclick="showForm('dissociative')">Dissociative Disorder</button>
     <br/>
     <br/>
 
-    <button onclick="showForm('neurodevelopment')">Feeding & Eating Disorder</button>
+    <button onclick="showForm('feeding_eating')">Feeding & Eating Disorder</button>
     <br/>
     <br/>
 
-    <button onclick="showForm('neurodevelopment')">Sleep-wake disorder</button>
+    <button onclick="showForm('sleep_wake')">Sleep-wake disorder</button>
     <br/>
     <br/>
 </nav>
 
 <div class="container">
-    <h2>Disorder Form</h2>
+      <!--<h2 style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;"></h2>-->
+    <h2 style="background: linear-gradient(45deg, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Disorder Form</h2>
+
     <hr>
      <form id="eliminationForm">
 
@@ -524,67 +473,105 @@ require_once "assessment_form.php";
 
 
 
-    <form id="eliminationForm">
 
-      <p><b>Elimination Disorder</b><br>
-           Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
-           This group of disorders includes enuresis, the repeated voiding of urine into inappropriate places, and encopresis, the repeated passage of feces into inappropriate places.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <form id="anxietyForm">
+
+      <p><b>Anxiety Disorder</b><br>
+           Anxiety disorder is a group of mental illnesses characterized by persistent and
+           excessive fear and worry. Unlike occasional anxiety, which most people experience
+           during stressful situations, anxiety disorders involve intense and prolonged
+           symptoms that significantly impact daily life.
            </p>
-       <label for="frequencyIntensity">1. Can you describe the frequency and intensity of the bowel or bladder symptoms your child is experiencing?</label></br>
-       <input type="text" id="frequencyIntensity" name="frequencyIntensity" required>
+       <label for="momentFeeling">1. How are you feeling at this moment?</label></br>
+       <input type="text" id="momentFeeling" name="momentFeeling" required>
       <br/>
       <br/>
       <br/>
 
-       <label for="symptomOnset">2. When did you first notice these symptoms, and have they changed in severity over time?</label></br>
-       <input type="text" id="symptomOnset" name="symptomOnset" required>
+       <label for="anxietyScale">2. Check in with your breathing, muscle tension, and thoughts.
+                                 On a scale from 1 to 10, where 1 represents no anxiety at all
+                                 and 10 signifies the highest distress level,
+                                 how would you rate your anxiety right now?</label></br>
+
+        <select>
+        <option value="select">Select</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+       <option value="6">6</option>
+       <option value="7">7</option>
+       <option value="8">8</option>
+       <option value="9">9</option>
+       <option value="10">10</option>
+       </select>
+       <input id="anxietyScale" name="anxietyScale" required>
        <br/>
        <br/>
        <br/>
 
-       <label for="stressfulEvents">3. Have there been any recent stressful events or changes in your child's life that may be contributing to these symptoms?</label>
+       <label for="reduceAnxiety">3. What would it take to reduce your anxiety rating by one point?
+         Exploring coping strategies and identifying potential triggers can be helpful.</label>
        <br/>
-       <input type="text" id="stressfulEvents" name="stressfulEvents" required>
-       <br/>
-       <br/>
-       <br/>
-
-       <label for="toiletingHabits">4. Can you provide information on your child's toileting habits, such as any rituals, fears, or avoidance behaviors related to using the bathroom?</label>
-       <br/>
-       <input type="text" id="toiletingHabits" name="toiletingHabits" required>
+       <input type="text" id="reduceAnxiety" name="reduceAnxiety" required>
        <br/>
        <br/>
        <br/>
 
-       <label for="emotionalWellBeing">5. How is your child's overall emotional well-being, and have there been any changes in mood or behavior that coincide with the onset of these symptoms?</label>
+       <label for="anxiousSigns">4. What are some signs or symptoms that arise when you feel anxious? Understanding physical sensations,
+         racing thoughts, or behavioral changes can provide valuable insights.</label>
        <br/>
-       <input type="text" id="emotionalWellBeing" name="emotionalWellBeing" required>
-       <br/>
-       <br/>
-       <br/>
-
-       <label for="medicalConditions">6. Are there any physical symptoms or medical conditions that might be contributing to the elimination difficulties your child is facing?</label>
-       <br/>
-       <input type="text" id="medicalConditions" name="medicalConditions" required>
+       <input type="text" id="anxiousSigns" name="anxiousSigns" required>
        <br/>
        <br/>
        <br/>
 
-       <label for="familyEnvironment">7. Can you describe the family environment and any significant family stressors that might be impacting your child's behavior?</label>
+       <label for="copingDiscoveries">5. Have you discovered any coping skills that help manage anxiety when it arises?
+         Learning about effective strategies can guide treatment planning.</label>
        <br/>
-       <input type="text" id="familyEnvironment" name="familyEnvironment" required><br/>
-
-       <label for="copingChallenges">8. How is your child coping with the challenges related to elimination, both at home and in social or academic settings?</label>
+       <input type="text" id="copingDiscoveries" name="copingDiscoveries" required>
        <br/>
-       <input type="text" id="copingChallenges" name="copingChallenges" required>
        <br/>
        <br/>
 
-       <button onclick="saveFormData('eliminationForm')" type="submit" class="btn btn-primary">Save</button>
+       <label for="bodyFeeling">6. Where in your body do you feel anxiety?
+         Some individuals experience tension in specific areas, such as the chest, stomach, or shoulders.</label>
+       <br/>
+       <input type="text" id="bodyFeeling" name="bodyFeeling" required>
+       <br/>
+       <br/>
+       <br/>
+
+       <label for="sessionDiscription">7. How would you describe your thoughts since our last session?
+         Examining thought patterns and cognitive distortions is essential.</label>
+       <br/>
+       <input type="text" id="sessionDiscription" name="sessionDiscription" required><br/>
+       <br/>
+       <br/>
+
+       <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
 
    </form>
 
-   <form id="eliminationForm">
+   <form id="depressionForm">
 
      <p><b>Elimination Disorder</b><br>
           Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -640,11 +627,11 @@ require_once "assessment_form.php";
       <br/>
       <br/>
 
-      <button onclick="saveFormData('eliminationForm')" type="submit" class="btn btn-primary">Save</button>
+      <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
 
   </form>
 
-  <form id="eliminationForm">
+  <form id="bipolarForm">
 
     <p><b>Elimination Disorder</b><br>
          Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -700,11 +687,11 @@ require_once "assessment_form.php";
      <br/>
      <br/>
 
-     <button onclick="saveFormData('eliminationForm')" type="submit" class="btn btn-primary">Save</button>
+     <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
 
  </form>
 
- <form id="eliminationForm">
+ <form id="Obsessive_compulsiveForm">
 
    <p><b>Elimination Disorder</b><br>
         Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -760,11 +747,11 @@ require_once "assessment_form.php";
     <br/>
     <br/>
 
-    <button onclick="saveFormData('eliminationForm')" type="submit" class="btn btn-primary">Save</button>
+    <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
 
 </form>
 
-<form id="eliminationForm">
+<form id="dissociativeForm">
 
   <p><b>Elimination Disorder</b><br>
        Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -824,7 +811,7 @@ require_once "assessment_form.php";
 
 </form>
 
-<form id="eliminationForm">
+<form id="feeding_eatingForm">
 
   <p><b>Elimination Disorder</b><br>
        Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -880,11 +867,11 @@ require_once "assessment_form.php";
    <br/>
    <br/>
 
-   <button onclick="saveFormData('eliminationForm')" type="submit" class="btn btn-primary">Save</button>
+   <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
 
 </form>
 
-<form id="eliminationForm">
+<form id="sleep_wakeForm">
 
   <p><b>Elimination Disorder</b><br>
        Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -940,7 +927,7 @@ require_once "assessment_form.php";
    <br/>
    <br/>
 
-   <button onclick="saveFormData('eliminationForm')" type="submit" class="btn btn-primary">Save</button>
+   <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
 
 </form>
 
@@ -981,8 +968,6 @@ require_once "assessment_form.php";
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 
 <?php
 require_once "footer.php";

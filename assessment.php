@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/eval_assessment.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/assessment_home.css">
+    <link rel="stylesheet" href="css/assessment_forms.css">
     
     <title>VitalGuard Clinic</title>
 </head>

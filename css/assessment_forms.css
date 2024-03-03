@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+          font-family: Arial, sans-serif;
+          display: flex;
+          background-color: #52D3D8;
+          /*background-color: #d1c6a7;*/
+          overflow-x: hidden;
+      }
+
+
+
+       nav {
+          width: 200px;
+          background-color: #f1f1f1;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          margin: 50px 8px 5px 6px;
+          padding: 25px;
+          text-decoration: none;
+         border-radius: 10px;
+         transition: background-color 0.3s ease; /* Add smooth transition */
+
+
+      }
+
+      .dis_assess_nav :hover{
+        background-color: #3887BE; /* Change background color on hover */
+        color: #FFFFFF; /* You can adjust other styles too */
+      }
+
+      .container {
+          flex: 1;
+          max-width: 100%;
+          padding: 25px;
+          margin: 50px 8px 5px 6px;
+          border: 3px solid #654e3b; /* Adjustment for the border width and color as needed */
+          border-radius: 10px;
+
+        }
+
+
+  form {
+          display: none;
+      }
+
+      h2 {
+         text-align: center;
+          margin-bottom: 15px;
+      }
+
+      @media (max-width: 768px) {
+      /* Styles for small screens */
+   }
+
+    @media (min-width: 769px) {
+    /* Styles for larger screens */
+  }
+

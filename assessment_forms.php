@@ -1,7 +1,10 @@
 <?php
 require_once "assessment_form.php";
  ?>
-<body>
+<body class="dis_assess_forms">
+
+
+
 
 <nav class="dis_assess_nav">
     <button onclick="showForm('elimination')">Elimination Disorder</button>
@@ -57,14 +60,14 @@ require_once "assessment_form.php";
     <br/>
 </nav>
 
-<div class="container">
+<div class="assess_forms_container">
       <!--<h2 style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;"></h2>-->
-    <h2 style="background: linear-gradient(45deg, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Disorder Form</h2>
+    <h2 class="H_assess_forms" style="background: linear-gradient(45deg, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Disorder Form</h2>
 
     <hr>
-     <form id="eliminationForm">
+     <form class="F_assess_forms" id="eliminationForm">
 
        <p><b>Elimination Disorder</b><br>
             Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -128,7 +131,7 @@ require_once "assessment_form.php";
 
     </form>
 
-    <form id="traumaForm">
+    <form class="F_assess_forms" id="traumaForm">
         <p><b>Trauma & Stressor Disorder</b><br>
             Trauma- and stressor-related disorders include disorders in which exposure to a traumatic or stressful event is listed explicitly as a diagnostic criterion.
             These include reactive attachment disorder, disinhibited social engagement disorder, posttraumatic stress disorder (PTSD), acute stress disorder, adjustment disorders, and prolonged grief disorder.
@@ -188,7 +191,7 @@ require_once "assessment_form.php";
         <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
     </form>
 
-    <form id="sexualForm">
+    <form class="F_assess_forms" id="sexualForm">
         <p><b>Sexual Dysfunctions</b><br>
             In the DSM-5, sexual dysfunctions are defined as “a clinically significant disturbance in a person's ability to respond sexually or to experience sexual pleasure”.
             </p>
@@ -242,7 +245,7 @@ require_once "assessment_form.php";
         <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
     </form>
 
-    <form id="genderForm">
+    <form class="F_assess_forms" id="genderForm">
         <p><b>Gender Dysphoria</b><br>
             A concept designated in the DSM-5-TR as clinically significant distress or impairment related to gender incongruence,
             which may include desire to change primary and/or secondary sex characteristics.
@@ -298,7 +301,7 @@ require_once "assessment_form.php";
         <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
     </form>
 
-    <form id="substanceForm">
+    <form class="F_assess_forms" id="substanceForm">
         <p><b>Substance related & Addictive Disorders </b><br>
             This is defined as using more of a substance than intended or using it for longer than you're meant to.
             </p>
@@ -353,7 +356,7 @@ require_once "assessment_form.php";
         <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
     </form>
 
-    <form id="neurocognitiveForm">
+    <form class="F_assess_forms" id="neurocognitiveForm">
         <p><b>Substance related & Addictive Disorders </b><br>
             These disorders have diverse clinical characteristics and aetiologies, with Alzheimer disease,
             cerebrovascular disease, Lewy body disease, frontotemporal degeneration, traumatic brain injury, infections, and alcohol abuse representing common causes.
@@ -409,7 +412,7 @@ require_once "assessment_form.php";
         <button onclick="saveFormData('traumaForm')" type="submit" class="btn btn-primary">Save</button>
     </form>
 
-    <form id="neurodevelopmentForm">
+    <form class="F_assess_forms" id="neurodevelopmentForm">
         <p><b>Neuro-development Disorders </b>
           <br/>
             In DSM 5 , NDDs are defined as a group of conditions with onset in the developmental period, inducing deficits that produce impairments of functioning.
@@ -491,7 +494,7 @@ require_once "assessment_form.php";
 
 
 
-    <form id="anxietyForm">
+    <form class="F_assess_forms" id="anxietyForm">
 
       <p><b>Anxiety Disorder</b><br>
            Anxiety disorder is a group of mental illnesses characterized by persistent and
@@ -510,8 +513,8 @@ require_once "assessment_form.php";
                                  and 10 signifies the highest distress level,
                                  how would you rate your anxiety right now?</label></br>
 
-        <select>
-        <option value="select">Select</option>
+      <select>
+      <option value="select">Select</option>
        <option value="1">1</option>
        <option value="2">2</option>
        <option value="3">3</option>
@@ -571,7 +574,7 @@ require_once "assessment_form.php";
 
    </form>
 
-   <form id="depressionForm">
+   <form class="F_assess_forms" id="depressionForm">
 
      <p><b>Elimination Disorder</b><br>
           Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -631,7 +634,7 @@ require_once "assessment_form.php";
 
   </form>
 
-  <form id="bipolarForm">
+  <form class="F_assess_forms" id="bipolarForm">
 
     <p><b>Elimination Disorder</b><br>
          Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -691,7 +694,7 @@ require_once "assessment_form.php";
 
  </form>
 
- <form id="Obsessive_compulsiveForm">
+ <form class="F_assess_forms" id="Obsessive_compulsiveForm">
 
    <p><b>Elimination Disorder</b><br>
         Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -751,7 +754,7 @@ require_once "assessment_form.php";
 
 </form>
 
-<form id="dissociativeForm">
+<form class="F_assess_forms" id="dissociativeForm">
 
   <p><b>Elimination Disorder</b><br>
        Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -811,7 +814,7 @@ require_once "assessment_form.php";
 
 </form>
 
-<form id="feeding_eatingForm">
+<form class="F_assess_forms" id="feeding_eatingForm">
 
   <p><b>Elimination Disorder</b><br>
        Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -871,7 +874,7 @@ require_once "assessment_form.php";
 
 </form>
 
-<form id="sleep_wakeForm">
+<form class="F_assess_forms" id="sleep_wakeForm">
 
   <p><b>Elimination Disorder</b><br>
        Elimination disorders all involve the inappropriate elimination of urine or feces and are usually first diagnosed in childhood or adolescence.
@@ -969,8 +972,9 @@ require_once "assessment_form.php";
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
-<?php
-require_once "footer.php";
- ?>
+
 </body>
-</html>
+<?php
+require_once "footer.php"
+ ?> 
+

@@ -64,7 +64,7 @@ require_once "assessment.php";
       <!--<h2 style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;"></h2>-->
-    <h2 class="H_assess_forms" style="background: linear-gradient(45deg, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Disorder Form</h2>
+    <h2 class="H_assess_forms">Disorder Form</h2>
 
     <hr>
      <form class="F_assess_forms" id="eliminationForm">
